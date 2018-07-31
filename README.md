@@ -11,7 +11,6 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Build Docker image from [Dockerfile](./Dockerfile)
-- This should only be done when you are developing or modifing Dockerfile in local environment.
 
 ```bash
 $> docker build -t=dqa-k6 .
