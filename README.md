@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Build Docker image from Dockerfile](#build-docker-image-from-dockerfile)
+- [Running k6 command directly from this image](#running-k6-command-directly-from-this-image)
+- [Set up a Jenkins job to run k6 task](#set-up-a-jenkins-job-to-run-k6-task)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Build Docker image from [Dockerfile](./Dockerfile)
 - This should only be done when you are developing or modifing Dockerfile in local environment.
 
