@@ -18,4 +18,4 @@ USER jenkins
 WORKDIR /opt/k6
 
 COPY --from=builder /go/bin/k6 /usr/bin/k6
-ENTRYPOINT ["k6"]
+# ENTRYPOINT ["k6"]
