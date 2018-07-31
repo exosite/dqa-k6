@@ -1,6 +1,5 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [What is k6](https://k6.readme.io/docs#section-what-is-k6)
 - [Build Docker image from Dockerfile](#build-docker-image-from-dockerfile)
