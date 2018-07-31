@@ -1,8 +1,12 @@
 FROM golang:1-alpine as builder
-WORKDIR $GOPATH/src/github.com/loadimpact/k6
+WORKDIR $GOPATH
 ADD . .
-RUN apk --no-cache add --virtual .build-deps git make build-base && \
-  go get . && CGO_ENABLED=0 go install -a -ldflags '-s -w'
+RUN mkdir -p $GOPATH/src/github.com/loadimpact && \
+  apk --no-cache add --virtual .build-deps git make build-base && \
+  cd $GOPATH/src/github.com/loadimpact && \
+  git clone https://github.com/loadimpact/k6.git && \
+  cd k6 && go get . && \
+  CGO_ENABLED=0 go install -a -ldflags '-s -w'
 
 FROM alpine:3.7
 RUN apk add --no-cache ca-certificates
