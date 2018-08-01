@@ -3,9 +3,10 @@
 
 - [What is k6](https://k6.readme.io/docs#section-what-is-k6)
 - [Build Docker image from Dockerfile](#build-docker-image-from-dockerfile)
-- [Running k6 command directly from this image](#running-k6-command-directly-from-this-image)
+- [Running k6 command directly from local image](#running-k6-command-directly-from-local-image)
     - [Example for dummies](#example-for-dummies)
     - [A more useful example](#a-more-useful-example)
+- [Running k6 by pulling Docker image from Docker Hub](#running-k6-by-pulling-docker-image-from-docker-hub)
 - [Set up a Jenkins job to run k6 task](#set-up-a-jenkins-job-to-run-k6-task)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
