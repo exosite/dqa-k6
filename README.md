@@ -30,7 +30,7 @@ REPOSITORY    TAG    IMAGE ID        CREATED    SIZE
 dqa-k6     latest  e82f8c928374  8 minutes ago  22.3MB
 ```
 
-## Running k6 command directly from this image
+## Running k6 command directly from local image
 Unlike k6 [official doc](https://k6.readme.io/docs/running-k6), there's no entrypoint in our [Dockerfile](./Dockerfile). So you need to specify the **k6** command in the docker run command.
 
 #### Example for dummies
@@ -102,7 +102,14 @@ time="2018-07-31T09:30:45Z" level=info msg="Test finished" i=1 t=859.3238ms
     vus_max....................: 1      min=1 max=1
 ```
  
- 
+## Running k6 by pulling Docker image from Docker Hub
+
+You must bind your sample scripts first, below code snippet is just an command example.
+
+```
+$> docker run -v $(pwd)/samples:/opt/samples johnsonexosite/k6-job \
+k6 run /opt/samples/http.js
+```
 
 ## Set up a Jenkins job to run k6 task
 - Please reference this job: https://jenkins.exosite.com/job/QA/job/k6-example/configure
